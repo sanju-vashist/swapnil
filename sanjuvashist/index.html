@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju Vashist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="images/logo.png" alt="Profile Picture" class="avatar">
+                </div>
+                <div class="profile-info">
+                    <h1>Swapnil</h1>
+                    <p class="job-title">Vedio Editor </p>
+                </div>
+
+                <!-- ye dubara phone khater h  -->
+                <div class="mobile-header">
+                    <div class="mobile-avatar">
+                        <img src="images/logo.png" alt="Profile Picture">
+                    </div>
+                    <div class="mobile-info">
+                        <h1>Swapnil </h1>
+                        <p class="job-title">Vedio Editor</p>
+                    </div>
+                </div>
+
+                <button class="show-contacts">Show Contacts</button>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="label">EMAIL</span>
+                        <div class="value">
+                            <i class="fas fa-envelope"></i>
+                            Swapnil@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">PHONE</span>
+                        <div class="value">
+                            <i class="fas fa-phone"></i>
+                            +91 1234567890
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">BIRTHDAY</span>
+                        <div class="value">
+                            <i class="fas fa-calendar"></i>
+                            June 13, 3005
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">LOCATION</span>
+                        <div class="value">
+                            <i class="fas fa-location-dot"></i>
+                            Kurukshatra, Haryana , Bharat.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sanju_vashist22/profilecard/?igsh=aXd1aXRvZ3JwNDRy"
+                        target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/sanju-vashist" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/sanju-vashist-18954b328" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Experience</a></li>
+                    <li><a href="#technical-skills">Skills</a></li>
+                    <li><a href="#get-in-touch">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+
+            <!-- <div class="container-ai">
+                <button id="micButton">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button id="stopButton">
+                    <i class="fas fa-stop"></i>
+                </button>
+            </div>
+            <div id="overlay"></div>
+            <div id="popup">
+                <div id="transcript"></div>
+                <div id="response"></div>
+            </div> -->
+
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>I’m Swapnil, a final-year Mechanical Engineering student and a passionate video editor.
+                        I focus on crafting engaging stories through video, with a special interest in multicam
+                        workflows, audio cleanup, and slide integration.</p>
+                    <p> I enjoy bringing clarity, rhythm, and balance to content — whether it’s syncing multiple camera
+                        angles, ensuring smooth transitions, or cleaning audio for maximum impact.</p>
+                </div>
+
+                <h2 id="services">what i am doing </h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>3D Designer </h3>
+                            <p>Create fullstack app for android, ios and windows.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Video Editing</h3>
+                            <p>Premiere Pro / DaVinci Resolve</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Project</h2>
+                <div class="portfolio-filters">
+                    <button class="portfolio-filter active">All</button>
+                    <button class="portfolio-filter">Applications</button>
+                    <button class="portfolio-filter">Vedio</button>
+                    <button class="portfolio-filter">Model development</button>
+                    <button class="portfolio-filter">Funny</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="https://sanju-vashist.github.io/lafda/"><img src="images/lafda.png" alt="Finance"
+                                class="portfolio-image"></a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web development</div>
+                            <h3 class="portfolio-title">Lafda</h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <a href="https://sanju-vashist.github.io/sanjaveeni/">
+                            <iframe class="portfolio-image" src="https://youtu.be/x0dJx0jtsTE?si=-Vqi0M7yYAi_sKa3"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+                        </a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web development</div>
+                            <h3 class="portfolio-title">Sanjaveeni</h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <!-- YouTube video preview -->
+                        <div class="portfolio-video">
+                            <iframe class="portfolio-image"
+                                src="https://www.youtube.com/embed/x0dJx0jtsTE?autoplay=1&mute=1&loop=1&playlist=x0dJx0jtsTE&controls=0&modestbranding=1&rel=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <!-- Content that links to your project -->
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web development</div>
+                            <h3 class="portfolio-title">Sanjaveeni</h3>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="portfolio-item">
+                        <!-- YouTube video preview -->
+                        <div class="portfolio-video">
+                            <iframe class="portfolio-image"
+                                src="https://www.youtube.com/embed/MmRBr6QIG2o?autoplay=1&mute=1&loop=1&playlist=MmRBr6QIG2o&controls=0&modestbranding=1&rel=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+
+                        </div>
+
+                        <!-- Content that links to your project -->
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web development</div>
+                            <h3 class="portfolio-title">Sanjaveeni</h3>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="portfolio-item">
+                        <a href="https://sanju-vashist.github.io/chat-wrap/"><img src="images/chat-wrap.jpg" alt="Fundo"
+                                class="portfolio-image"></a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web design</div>
+                            <h3 class="portfolio-title">Chatwrapper</h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <a href="https://sanju-vashist.github.io/dowry-calculator/"><img src="images/dowery.png"
+                                alt="MetaSpark" class="portfolio-image"></a>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">Web design</div>
+                            <h3 class="portfolio-title">Dowery-calculator</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="get-in-touch" class="get-in-touch">
+                <h2>Everything that I have created </h2>
+                <p>The way i learn is by create and the things that i create are reflection of what i need or people
+                    around me use!</p>
+                <p>Love to work on unconventional things</p>
+                <blockquote>"Adding more to the list , its just the beginning ."</blockquote>
+                <div class="social-links"></div>
+                <button onclick="redirectToProjects()">Check them out !</button>
+            </section>
+
+            <section id="education">
+                <h2>Experince </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-period">2023 — Currentlly</div>
+                        <h3 class="timeline-title">Maharishi Markandshwer University </h3>
+                        <p class="timeline-description">persuing my computer Engineering 5th semester.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-period">2020 — 2022</div>
+                        <h3 class="timeline-title">Oxford public School</h3>
+                        <p class="timeline-description">complited my schooling from there.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-period">2010— 2020</div>
+                        <h3 class="timeline-title">Oxford public School</h3>
+                        <p class="timeline-description">Secondry schooling from oxford school.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="technical-skills">
+                <h2>Technical Skills</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>App Development</h3>
+                            <p>React Native, Flutter, iOS/Android Development, Cross-platform Solutions</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Backend Development</h3>
+                            <p>Firebase , supabase</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Database Management</h3>
+                            <p>MySQL, MongoDB, Database Design & Optimization</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud gold-icon"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cloud Services</h3>
+                            <p>AWS, Azure, Docker, Kubernetes, CI/CD, Cloud Architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="get-in-touch" class="get-in-touch">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, ideas, or just want to say hi, feel free to reach out!</p>
+                <blockquote>"Connection is the beginning of every great story."</blockquote>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sanju_vashist22/profilecard/?igsh=aXd1aXRvZ3JwNDRy"
+                        target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/sanju-vashist" class="social-link" target="_blank"><i
+                            class="fab fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/sanju-vashist-18954b328" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+</body>
+
+</html>
